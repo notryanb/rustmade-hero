@@ -7,6 +7,13 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+log = "0.4"
+pretty_env_logger = "0.4"
 
-[target.'cfg(windows)'.dependencies]
+
+# [target.'cfg(windows)'.dependencies]
+# bindings = { path = "bindings" }
+# windows = "0.11"
+
+# Swap out for windows crate and see how the experience is.
 winapi = { version = "0.3", features = ["winuser", "libloaderapi"] }
